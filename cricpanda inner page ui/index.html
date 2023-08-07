@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css"
+    />
+
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap");
+      * {
+        font-family: "Roboto", sans-serif !important;
+      }
+      .header {
+        position: sticky;
+        top: 0;
+        z-index: 999;
+        background: #4abb8b;
+      }
+      .container-fluid {
+        background: #cdf5e4;
+        margin: 0;
+      }
+      .navbar {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 8px;
+      }
+      .cricpandalogo {
+        height: 45px;
+      }
+      .socialicons {
+        height: 45px;
+        padding-left: 2px;
+        padding-right: 4px;
+      }
+      .logo_cont,
+      .socialicons_cont {
+        margin-left: 1rem;
+        margin-right: 1rem;
+      }
+      .left {
+        width: 40%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 10px;
+      }
+      .right {
+        width: 60%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+      }
+      .card {
+        background: #cdf5e4;
+        border: none;
+        outline: none;
+        width: 50%;
+      }
+      .card-body {
+        padding: 5px;
+      }
+      h5 {
+        text-align: center;
+      }
+      .card-img-top {
+        max-height: 200px;
+      }
+
+      .main {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding-top: 10px;
+        padding-bottom: 10px;
+      }
+      .form-control {
+        width: 50%;
+        margin-top: 5px;
+        margin-bottom: 5px;
+      }
+      input::placeholder {
+        font-weight: 350;
+      }
+      .footer_text {
+        padding: 10px;
+        text-align: center;
+        margin-bottom: 0;
+        font-weight: 300;
+        font-size: 14px;
+      }
+      footer {
+        background: transparent;
+        bottom: 0;
+      }
+      .banner {
+        background: #a3bd85;
+        color: #fff;
+        text-align: center;
+        padding: 10px;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        margin-bottom: 5px;
+        margin-top: 5px;
+      }
+      .description {
+        margin-top: 2rem;
+      }
+      .otcheading {
+        color: #0d1470;
+        text-align: center;
+        margin-top: 2rem;
+      }
+      .otcpoints {
+        border: 1px solid #afb1b3;
+        border-radius: 10px;
+        padding: 25px 25px 10px 25px;
+        margin-bottom: 2rem;
+      }
+
+
+      /* <!-- ========================================================================= -->300px
+      <!-- ========================       Breakpoints     ============================= -->
+      <!-- ========================================================================= --> */
+
+      @media only screen and (max-width: 576px){
+        .cricpandalogo {
+            height: 40px;
+            padding-left: 10px
+        }
+        
+        .socialicons {
+            height: 40px;
+            padding-right:2px;
+        }
+        .logo_cont,.socialicons_cont{
+            padding: 0;
+            margin: 0;
+        }
+        .form-control{
+            width:90%;
+        }
+        .banner{
+            font-size: 17px;;
+        }
+        .card-img-top{
+            max-height: 200px;
+        }
+        .card{
+            width:100%
+        }h5{
+            font-size: 1rem;
+        }
+    }
+    </style>
+  </head>
+  <body>
+    <div class="container-fluid" style="--bs-gutter-x: 0px">
+      <!-- ========================================================================= -->
+      <!-- ========================       header       ============================= -->
+      <!-- ========================================================================= -->
+
+      <header class="header">
+        <nav class="navbar">
+          <div class="logo_cont">
+            <img
+              src="./logoandicons/main-logo.png"
+              alt="cricpanda logo"
+              class="cricpandalogo"
+            />
+          </div>
+          <div class="socialicons_cont">
+            <img
+              src="./logoandicons/wtsapp.png"
+              alt="whatsapp logo"
+              class="socialicons"
+            />
+            <img
+              src="./logoandicons/telegrm.png"
+              alt="telegram logo"
+              class="socialicons"
+            />
+            <img
+              src="./logoandicons/yutube.png"
+              alt="youtube logo"
+              class="socialicons"
+            />
+          </div>
+        </nav>
+      </header>
+
+      <!-- ========================================================================= -->
+      <!-- ========================    Main content    ============================= -->
+      <!-- ========================================================================= -->
+
+      <div class="main_content">
+        <main class="main">
+          <!-- left -->
+          <div class="left">
+            <div class="card">
+              <img
+                src="./logoandicons/download (1).jpg"
+                class="card-img-top"
+                alt="..."
+              />
+              <div class="card-body">
+                <h5>Ace23 deposit</h5>
+              </div>
+            </div>
+          </div>
+
+          <!-- right -->
+          <div class="right">
+            <input
+              type="text"
+              id="phone"
+              name="phone"
+              pattern="[0-9]{10}"
+              class="form-control"
+              placeholder="Whatsapp Registered Number"
+            />
+            <input
+              type="text"
+              id="upiId"
+              name="phone"
+              pattern="[0-9]{10}"
+              class="form-control"
+              placeholder="Enter Valid Upi-Id"
+            />
+            <button class="btn btn-danger form-control">Download</button>
+            <button class="btn btn-primary form-control">Refer & Earn</button>
+          </div>
+        </main>
+      </div>
+
+      <!-- ========================================================================= -->
+      <!-- ===========================    Banner    ================================ -->
+      <!-- ========================================================================= -->
+      <h4 class="banner">
+        <div class="item1">Install & Register the Ace23 deposit</div>
+        <div class="item2">Rs.60</div>
+      </h4>
+
+      <!-- ========================================================================= -->
+      <!-- =========================    description    ============================= -->
+      <!-- ========================================================================= -->
+
+      <div class="description container">
+        <p class="english text">
+          Download, Install & Register and do deposit -25 RS and firstgamplay on
+          Ace2three App & Play First Game Complete to get cashback of Rs 60
+          **This Offer is only for users who have not installed this App earlier
+          on this phone.
+        </p>
+        <p class="hindi text">
+          डाउनलोड करें, इंस्टॉल करें और रजिस्टर करें और -25 रुपये जमा करें और
+          Ace2three ऐप पर पहला गेम खेलें और 60 रुपये का कैशबैक पाने के लिए पहला
+          गेम पूरा करें **यह ऑफर केवल उन यूजर्स के लिए है जिन्होंने इस एप को
+          पहले इस फोन में इंस्टॉल नहीं किया है।
+        </p>
+      </div>
+
+      <!-- ========================================================================= -->
+      <!-- =========================    Offer & Terms  ============================= -->
+      <!-- ========================================================================= -->
+
+      <div class="container">
+        <div class="offerterms">
+          <h2 class="otcheading">Offer terms & conditions</h2>
+        </div>
+
+        <div class="otcpoints">
+          <ol>
+            <li>
+              Offer valid only once per User/UPI-Id/IP address and Device.
+            </li>
+            <li>
+              Multiple registrations from same user/UPI-Id/IP address, similar
+              looking usernames and e-mail IDs and Device will not be paid.
+            </li>
+            <li>
+              Use only Real Indian Mobile Numbers and genuine mail ID to
+              register in the app.
+            </li>
+            <li>
+              Merchant verifies your account, if they find any Duplicate or
+              Suspicious transaction, then your cashback may get rejected.
+            </li>
+            <li>
+              Any query related to Cashback will be entertained by CricPanda
+              Team. Write email to apphelpmg@gmail.com
+            </li>
+          </ol>
+        </div>
+      </div>
+
+      <!-- ========================================================================= -->
+      <!-- ===========================    Footer    ================================ -->
+      <!-- ========================================================================= -->
+
+      <hr style="margin: 0; padding: 0; color: #939597" />
+      <footer>
+        <div class="footer">
+          <p class="footer_text">
+            <strong>&copy;</strong> 2019-2023 Cricpanda.in, All rights reserved.
+          </p>
+        </div>
+      </footer>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.min.js"></script>
+  </body>
+</html>
